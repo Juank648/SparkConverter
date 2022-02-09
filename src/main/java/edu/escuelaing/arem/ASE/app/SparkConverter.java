@@ -12,8 +12,8 @@ import static spark.Spark.*;
  */
 public class SparkConverter
 {
-    private static String faToCelPath = "/celsius/:fahrenheit";
-    private static String celToFaPath = "/fahrenheit/:celsius";
+    private static String faToCelPath = "/celsius/:temp";
+    private static String celToFaPath = "/fahrenheit/:temp";
     private static AppService appService;
     private static ConverterService converterService = new ConverterServiceImpl();
 

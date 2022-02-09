@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>SparkWebApp</title>
+    <script src="js/apiclient.js"></script>
 </head>
 <body>
-Hola Mundo
+<h1>Spark Web Converter</h1>
+
+<p>Convertidor de unidades de medida</p>
+<form>
+    <label for="unit">Escoge una unidad a transformar:</label>
+    <select name="unit" id="unit">
+        <option value="FaToCel">Fahrenheit a Celsius</option>
+        <option value="CelToFa">Celsius a Fahrenheit</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Convertir">
+    <input type=number id="value"> Ingrese el valor a Convertir</input>
+</form>
 </body>
 </html>

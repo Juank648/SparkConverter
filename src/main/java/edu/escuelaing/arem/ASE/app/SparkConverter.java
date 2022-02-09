@@ -30,9 +30,8 @@ public class SparkConverter
         });
 
 
-        float val = Float.parseFloat(":temp");
-        get(faToCelPath, "application/json",(req, res) -> appService.createJsonObject(converterService.FarToCel(val),"fahrenheit"));
-        get(celToFaPath, "application/json",(req, res) -> appService.createJsonObject(converterService.CelToFar(val),"celsius"));
+        get(faToCelPath, "application/json",(req, res) -> appService.createJsonObject(converterService.FarToCel(Float.parseFloat(":temp")),"fahrenheit"));
+        get(celToFaPath, "application/json",(req, res) -> appService.createJsonObject(converterService.CelToFar(Float.parseFloat(":temp")),"celsius"));
 
 
     }

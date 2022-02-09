@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>SparkWebApp</title>
     <script src="js/apiclient.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 <h1>Spark Web Converter</h1>
@@ -16,8 +17,9 @@
         <option value="CelToFa">Celsius a Fahrenheit</option>
     </select>
     <br><br>
-    <input type="submit" value="Convertir">
     <input type=number id="value"> Ingrese el valor a Convertir</input>
+    <button type="button" onclick="app.getResult();">Convertir</button>
+
 </form>
 </body>
 </html>

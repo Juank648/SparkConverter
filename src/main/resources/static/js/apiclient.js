@@ -7,6 +7,7 @@ var apiclient = (function (){
                 contentType: "application/json",
             }
             , function (data){
+                console.log(data);
                 callback(null, data);
             }
         ).fail(function (error) {
@@ -21,6 +22,7 @@ var apiclient = (function (){
                         contentType: "application/json",
                     }
                     , function (data){
+                        console.log(data);
                         callback(null, data);
                     }
                 ).fail(function (error) {
